@@ -32,9 +32,12 @@ public abstract class BaseFragment extends Fragment implements IBaseView {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         mLayoutView = getCreateView(inflater, container);
         ButterKnife.bind(this, mLayoutView);
+        initPresenter();
         initView();
         return mLayoutView;
     }
+
+    protected abstract void initPresenter();
 
     /**
      * 获取Fragment布局文件的View

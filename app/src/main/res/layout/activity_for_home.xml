@@ -6,5 +6,4 @@
         <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/contents_line_gray" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
     </RelativeLayout>
     <WebView android:id="@id/activityForHomeWeb" android:layout_width="fill_parent" android:layout_height="370.0dip" android:layout_weight="0.28" />
-    <include layout="@layout/bottom_main" />
 </LinearLayout>

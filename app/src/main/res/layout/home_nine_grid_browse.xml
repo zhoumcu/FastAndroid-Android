@@ -12,11 +12,18 @@
         <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/title_icon_line" android:layout_toLeftOf="@id/relNineSingle" />
         <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/contents_line_gray" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
     </RelativeLayout>
-    <RelativeLayout android:id="@id/relGrid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/relLoading" android:layout_below="@id/relHead">
+    <RelativeLayout
+        android:id="@id/relGrid"
+        android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/relLoading" android:layout_below="@id/relHead">
         <GridView android:gravity="center" android:id="@id/gridSmall" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@anim/list_selector" android:cacheColorHint="#fff3f4f6" android:horizontalSpacing="1.0dip" android:numColumns="2" />
     </RelativeLayout>
-    <RelativeLayout android:id="@id/relLoading" android:background="#fff3f4f6" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="89.0dip" android:layout_below="@id/gridSmall" android:layout_alignParentBottom="true">
+    <RelativeLayout
+        android:id="@id/relLoading"
+        android:background="#fff3f4f6"
+        android:visibility="gone"
+        android:layout_width="fill_parent" android:layout_height="89.0dip" android:layout_below="@id/gridSmall" android:layout_alignParentBottom="true">
         <TextView android:textSize="20.0sp" android:textColor="#ff666666" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="89.0dip" android:text="正在加载...." />
     </RelativeLayout>
-    <include android:id="@id/defaultLogo" layout="@layout/default_logo" />
+    <include android:id="@id/defaultLogo"
+        layout="@layout/default_logo" />
 </RelativeLayout>

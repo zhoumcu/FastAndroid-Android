@@ -28,4 +28,5 @@ public interface IProductsPresenter {
      * @param productsView
      */
     void products(int categoryId, IProductsView productsView);
+
 }
